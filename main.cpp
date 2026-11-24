@@ -32,20 +32,33 @@ void leading_zeros() {
     (void)zeros;
 }
 
+void alternate_sum() {
+    int acc = 0;
+    for (int i = 1; i <= 12; ++i) {
+        if (i % 2 == 0) acc += i; else acc -= i;
+    }
+    (void)acc;
+}
+
+void sum_pair() {
+    int left = 3;
+    int right = 9;
+    int total = left + right;
+    (void)total;
+}
+
 extern "C" int golden_hollow();
-extern "C" void golden_bridge();
-extern "C" void bright_signal();
-extern "C" void noble_canyon();
-extern "C" void swift_spruce();
+extern "C" void serene_haven();
+extern "C" void calm_canyon();
 
 int main() {
     is_palindrome();
     count_multiples();
     factorial_sum();
     leading_zeros();
-    golden_bridge();
-    bright_signal();
-    noble_canyon();
-    swift_spruce();
+    alternate_sum();
+    sum_pair();
+    serene_haven();
+    calm_canyon();
     return golden_hollow();
 }
